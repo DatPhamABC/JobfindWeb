@@ -1,0 +1,30 @@
+GET  http://localhost:3000/company
+
+###
+POST http://localhost:3000/company
+Content-Type: application/json
+
+{
+    "img": "https://cdn.itviec.com/photos",
+    "title": "ABC",
+    "address": "Tan Binh",
+    "logo": "https://cdn.itviec.com/employers",
+    "overviews": "IMT Solutions, with Sao Khue",
+    "keySkills": ["Java"],
+    "whyYouLoveWorkingHere": "Benefits:\n\n\nCompetitive salary and allowance",
+    "url": "https://itviec.com/companies"
+}
+
+###
+GET http://localhost:3000/company/5f2d14da3a827b3eb42a49b1
+
+###
+DELETE http://localhost:3000/company/5f2d16603a827b3eb42a49b2
+
+###
+PATCH http://localhost:3000/company/5f2d169109b68b302c707a0f
+Content-Type: application/json
+
+{
+    "title": "IMTs"
+}
